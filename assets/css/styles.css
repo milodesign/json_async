@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background: #e53935;
+    color: white;
+}
+
+#contenedor-pokemon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px #00000015;
+    transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+.numero {
+    color: #777;
+    font-size: 14px;
+}
+
+.tipos {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tipo {
+    background: #e5e7eb;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+dialog {
+    border: none;
+    border-radius: 16px;
+    width: min(90%, 420px);
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+dialog::backdrop {
+    background: #00000099;
+}
+
+#cerrar-modal {
+    display: block;
+    margin-left: auto;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#detalle-pokemon {
+    text-align: center;
+}
+
+#detalle-pokemon img {
+width: 160px;
+max-width: 100%;
+}
+
+.estadistica {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
