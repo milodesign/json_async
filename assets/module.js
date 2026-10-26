@@ -54,8 +54,8 @@ for (let i = 1; i <= 151; i++) {
       return response.json();
     })
     .then((response) => {
-      resultado.innerHTML += `<img src="${response.sprites.other["official-artwork"].front_shiny}">
-      <h1>${response.name} ${response.id}</h1>`;
+      resultado.innerHTML += `<div class="tarjeta"><img src="${response.sprites.other["official-artwork"].front_shiny}">
+      <h1>${response.name} ${response.id}</h1></div>`;
       console.log(response.sprites.other["official-artwork"].front_shiny);
     //   img.src = response.sprites.other["official-artwork"].front_shiny;
     //   resultado.appendChild(img);
