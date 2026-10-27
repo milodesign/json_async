@@ -65,6 +65,7 @@ header {
 }
 
 dialog {
+    display: none;
     border: none;
     border-radius: 16px;
     width: min(90%, 420px);
